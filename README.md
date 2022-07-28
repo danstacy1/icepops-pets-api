@@ -1,21 +1,4 @@
-# express-auth-template
-
-A template for starting projects with `express` as an API. Includes
-authentication and common middlewares.
-
-## Installation
-
-1. [Download](../../archive/master.zip) this template.
-1. Move the .zip file to your `sei/projects/` directory and Unzip it (creating a
-   folder) -- **NOTE:** if the folder was already unzipped, use the `mv` command
-   line to move it to the `sei/projects/` directory.
-1. Rename the directory from express-auth-template -> your-app-name.
-1. Rename [`README.md`](README.md) to `REF.md` and use as a reference, create a new README and fill with your own content.
-1. Move into the new project and `git init`.
-1. Replace all instances of `'express-auth-template'` with your app name.
-1. Install dependencies with `npm install`.
-1. Ensure that you have `nodemon` installed by running `npm install -g nodemon`.
-2. Once everything is working, make an initial commit.
+# Icepop Pets API
 
 ## Structure
 
@@ -179,3 +162,13 @@ Response:
 ```md
 HTTP/1.1 204 No Content
 ```
+## Pets Routes
+
+### Pets Routes Table
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| PATCH  | `/change-password/` | `users#changepw`  |
+| DELETE | `/sign-out/`        | `users#signout`   |
