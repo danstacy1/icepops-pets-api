@@ -35,6 +35,7 @@ router.get('/pets', (req, res, next) => {
 	Pet.find()
 		.populate('owner')
 		.then((pets) => {
+			// console.log('the whole request', req)
 			// `pets` will be an array of Mongoose documents
 			// we want to convert each one to a POJO, so we use `.map` to
 			// apply `.toObject` to each one
