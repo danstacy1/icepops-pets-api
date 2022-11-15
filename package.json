@@ -1,7 +1,7 @@
 {
   "name": "icepops-pets-api",
   "version": "1.0.0",
-  "description": "A fun lil API serer having to do with pets",
+  "description": "A fun lil API server having to do with pets",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
